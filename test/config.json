@@ -136,6 +136,15 @@
 			"RetryMax": 1,
 			"Tags": []
 		},
+		"backup_s3": {
+			"File": "unused.go",
+			"Args": ["vitess.io/vitess/go/test/endtoend/backup/s3", "-timeout", "30m"],
+			"Command": [],
+			"Manual": false,
+			"Shard": "21",
+			"RetryMax": 1,
+			"Tags": []
+		},
 		"backup_only": {
 			"File": "unused.go",
 			"Args": ["vitess.io/vitess/go/test/endtoend/backup/vtbackup", "-timeout", "20m"],
@@ -1378,6 +1387,15 @@
 		"vreplication_movetables_tz": {
 			"File": "unused.go",
 			"Args": ["vitess.io/vitess/go/test/endtoend/vreplication", "-run", "TestMoveTablesTZ"],
+			"Command": [],
+			"Manual": false,
+			"Shard": "vreplication_vtctldclient_vdiff2_movetables_tz",
+			"RetryMax": 1,
+			"Tags": []
+		},
+		"loopkup_index": {
+			"File": "unused.go",
+			"Args": ["vitess.io/vitess/go/test/endtoend/vreplication", "-run", "TestLookupIndex"],
 			"Command": [],
 			"Manual": false,
 			"Shard": "vreplication_vtctldclient_vdiff2_movetables_tz",
