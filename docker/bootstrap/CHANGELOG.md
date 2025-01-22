@@ -158,3 +158,8 @@ List of changes between bootstrap image versions.
 ## [40] - 2025-01-17
 ### Changes
 - Update build to golang 1.23.5
+
+## [41] - 2025-01-15
+### Changes
+- Update base image to bookworm
+- Add MySQL84 image
